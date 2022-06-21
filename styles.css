@@ -1,0 +1,81 @@
+:root{
+    --dark: #1f1f1f;
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --blue-rey: #005fff;
+    --blue-rey: rgb(0, 94, 255);
+    --grey-p: #3d4f58;
+    --dt-darkest: #121a21;
+    --body-bg-dark: #192229;
+    --blue-800: #063251;
+    --nav-grey: rgba(117, 117, 117, 1);
+    --bluish-purple: rgb(64,78,237);
+    --not-quite-dark: #23272a;
+    --blue-300: #88c8f7;
+    --blue-800: #063251;
+    --letter-color: #ffffff;
+    --body-bg: #fbfdfe;
+    --dark-blue: rgb(24, 43, 194);
+}
+@font-face {
+    font-family: Til;
+    src: url('./src/fonts/Amaranth-Regular.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-section{
+    height: 72px;
+    background-color: var(--body-bg);
+}
+.navbar{
+    height: 100%;
+    background-color: var(--body-bg);
+}
+.logo__container{
+    height: 40px;
+    width: 200px;
+    transform: translateX(6rem);
+    padding: 2px;
+}
+.logo__container-logo{
+    height: 35px;
+    width: 35px;
+    float: left;
+
+}
+.logo__container-title{
+    width: 100px;
+    float: right;
+    transform: translate(-50px, 2px);
+}
+#logo__container-a{
+    font-size: 21px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--dark-blue);
+    
+}
+
+.navbar-collapse{
+    transform: translateX(38rem);
+}
+
+.nav_link{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--nav-grey);
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    line-height: 72px;
+    color: rgba(117, 117, 117, 1);
+    display: block;
+    font-weight: 500;
+    position: relative;
+    transition: all .5s ease;
+}
+.nav_link:hover{
+    color: var(--not-quite-dark);
+}
