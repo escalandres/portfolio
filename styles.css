@@ -55,7 +55,7 @@
     font-size: 21px;
     font-weight: 700;
     font-style: italic;
-    color: var(--dark-blue);
+    color: var(--dark);
     
 }
 
@@ -84,12 +84,12 @@
 /* Inicio section */
 #inicio{
     width: 100%;
-    height: 350px;
+    height: 400px;
 }
 .main-container{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 126px;
+    margin-top: 156px;
     text-align: center;
     z-index: 1;
 }
@@ -121,4 +121,41 @@
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
     margin-bottom: 30px;
+}
+
+/* Sobre mi section */
+.about__container-h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: #252525;
+    margin: 0 0 25px;
+    padding-bottom: 13px;
+    letter-spacing: -1.2px;
+    position: relative;
+    cursor: default;
+    text-align: center;
+    transform: translateX(120px);
+}
+
+.about__info-container{
+    margin-top: 40px;
+}
+
+.about__foto{
+    flex: 0 0 33%;
+    max-width: 33%;
+    width: 328px;
+    height: 350px;
+    transform: translateX(120px);
+}
+
+.about__foto-img{
+    width: 100%;
+    display: block;
+    box-shadow: 6px 6px 30px #d1d9e6;
+    border-radius: 20px;
+    
 }
