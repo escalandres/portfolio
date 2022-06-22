@@ -4,7 +4,7 @@
     --white: #fff;
     --blue-rey: #005fff;
     --blue-rey: rgb(0, 94, 255);
-    --colorCeleste: #1C89FC;
+    --colorCeleste: rgb(28, 137, 252);
     --grey-p: #3d4f58;
     --dt-darkest: #121a21;
     --body-bg-dark: #192229;
@@ -130,8 +130,9 @@
 /* Sobre mi section */
 #sobre_mi{
     background-color: var(--white);
+    height: 1200px;
 }
-.about__container-h1{
+.container-h1{
     display: inline-block;
     text-transform: uppercase;
     font-family: 'Mulish', sans-serif;
@@ -144,6 +145,10 @@
     position: relative;
     cursor: default;
     text-align: center;
+    
+}
+
+.about__container-h1{
     transform: translateX(120px);
 }
 
@@ -175,8 +180,8 @@
 .about__info{
     /* margin-left: 120px; */
     /* float:left; */
-    flex: 0 0 74%;
-    max-width: 74%;
+    flex: 0 0 72%;
+    max-width: 72%;
 }
 
 .about__info-h3{
@@ -221,4 +226,18 @@
 
 .list > p{
     transform: translateX(20px);
+}
+
+/* Habilidades */
+.habilidades__container{
+    width: 100%;
+    height: 494px;
+    padding: 50px 120px;
+    border: 2px solid black;
+    text-align: center
+}
+
+.habilidades__container-h1{
+    ;
+    /* transform: translateX(120px); */
 }
