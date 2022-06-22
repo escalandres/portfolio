@@ -324,3 +324,97 @@
     position: relative;
     cursor: default;
 }
+
+.item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    position: relative;
+    padding: 8px;
+}
+
+.inner {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    cursor: default;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid rgb(0 0 0 / 22%);
+    box-shadow: 0 0 32px -8px #464646;
+    background-color: rgba(227, 232, 234, .75);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: 1;
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.item, .inner > img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+    /* border: 1px solid rgb(51 51 51 / 18%); */
+    border: 1px solid rgb(64,78,237 / 18%);
+}
+
+.item:hover, .overlay:hover {
+    opacity: 1;
+}
+
+.project-h4{
+    /* font-size: 20px; */
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 5px;
+    font-size: 23px;
+    color: #3b3938;
+    font-weight: 900;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    animation: galleryText .8s ease;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: galleryText;
+}
+
+.project-p{
+    font-size: 14px;
+    color: #3b3938;
+    padding: 10px 0;
+    letter-spacing: .5px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+}
+
+.project-a, .project-a:hover{
+    border: 2px solid #3b3938;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 20px;
+    color: #3b3938;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+
+.link-icon{
+    margin-right: 10px;
+}
