@@ -436,15 +436,31 @@
 }
 
 
+/* Contact me*/
+#contact_me{
+    cursor: default;
+    padding: 70px 15px;
+    background-color: #232323;
+    height: 500px;
+}
 
 
+
+
+.social-icons{
+    color: var(--white);
+    margin-right: 40px;
+    font-size: 25px;
+}
 
 /* Footer */
 footer{
     cursor: default;
-    /* background-color: #232323; */
-    background-color: var(--colorCeleste);
+    background-color: #232323;
+    /* background-color: var(--colorCeleste); */
     padding: 15px;
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
 }
 
 .footer__container{
