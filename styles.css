@@ -232,8 +232,10 @@ body {
 }
 
 .list {
-    flex: 0 0 calc(50% - 15%);
-    max-width: calc(50% - 15%);
+    /* flex: 0 0 calc(50% - 15%);
+    max-width: calc(50% - 15%); */
+    flex: 0 0 100% ;
+    max-width: 100% ;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -529,10 +531,10 @@ footer{
 
 /*  Responsive Design */
 /*Mobile*/
-@media only screen and (max-width:600px){
+@media only screen and (max-width:795px){
     #navbar-section{
         height: 72px;
-        width:10%;
+        width:100%;
         background-color: var(--colorFondoGris);
     }
     .navbar{
@@ -543,13 +545,171 @@ footer{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        transform: translate(0px, 0px);
+    }
+    #sobre_mi{
+        height: 2500px;
+    }
+    .about__foto{
+        flex: 0 0 45%;
+        margin: auto;
+        max-width: 42%;
+        height: 90%;
     }
     .about__foto-img{
         border-radius: 50%;
         height: 35vw;
         border: 1px solid #4e5e79;
     }
+    .about__info{
+        margin-top: 50px;
+        text-align: center;
+        transform: translateX(20%);
+    }
+
+    .list > label{
+        transform: translateX(80%);
+        margin: 20px 0px;
+    }
+    
+    .list > p{
+        transform: translateX(0px);
+    }
+    
+    .habilidades__container{
+        height: 2000px;
+        padding: 50px 50px;
+        text-align: center
+    }
+    .habilidades__container-skill{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill-box__container{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill-box__icon{
+        display: flex;
+        padding: 13px;
+        margin-right: 18px;
+        border-radius: 22px;
+    }
+    .skill-box__h6{
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        margin: 0 0 2px;
+    }
+    .skill-box__p{
+        color: #747474;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    #proyectos{
+        height: 1100px;
+    }
+    .project__container{
+        margin: 0 0 25px;
+        padding: 50px 15px;
+    }
+    .item{
+        position: relative;
+        padding: 8px;
+    }
+    .portfolio-gallery, .item, .project-img {
+        width: 100%;
+        display: block;
+        border-radius: 18px;
+    }
+    .project-p{
+        margin: -10px 0px 0px 0px;
+    }
     .icons__container{
         transform: translate(0px, 0px);
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .skill-box__container, .skill-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 461px) and (max-width: 550px){
+    .skill-box__container, .skill-box {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 640px){
+    .skill-box__container, .skill-box {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 830px){
+    .skill-box__container, .skill-box {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+
+@media only screen and (min-width: 831px) and (max-width: 1080px){
+    .skill-box__container, .skill-box {
+        flex: 0 0 43%;
+        max-width: 43%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .portfolio-gallery, .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+    
+@media only screen and (min-width: 501px) and (max-width: 670px){
+    .portfolio-gallery, .item {
+        flex: 0 0 68%;
+        max-width: 68%;
+    }
+}
+    
+@media only screen and (min-width: 671px) and (max-width: 950px){
+    .portfolio-gallery, .item {
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+}
+@media only screen and (max-width: 670px){
+    .project-h4{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width: 671px) and (max-width: 720px){
+    .project-h4{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 950px){
+    .project-h4{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1030px){
+    .project-h4{
+        font-size: 20px;
     }
 }
