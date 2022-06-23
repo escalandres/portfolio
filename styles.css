@@ -682,6 +682,9 @@ footer{
     .icons__container{
         transform: translate(10%, 10px);
     }
+    footer{
+        height: 150px;
+    }
 }
 
 @media only screen and (max-width: 445px){
