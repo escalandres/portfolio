@@ -118,7 +118,7 @@
                 
                 <div class="about__info">
                     <h3 class="about__info-h3">Soy Desarrollador Web</h3>
-                    <h4 class="about__info-h4"><span class="">EN FORMACIÓN</span>.<span class=""> Estudiante</span> de 6to semestre de <span class="">ingeniería Telemática</span> la 
+                    <h4 class="about__info-h4"><span class="">EN FORMACIÓN</span>.<span class=""> Estudiante</span> de 8vo semestre de <span class="">ingeniería Telemática</span> la 
                         Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas (UPIITA) del Instituto Politécnico Nacional, México.</h3>
                     <p class="about__info-p">Soy una persona abierta a nuevos retos y con muchas ganas de seguir aprendiendo. Actualmente estoy buscando nuevas oportunidades que 
                         fortalezcan mis conocimientos y habilidades, tanto duras como blandas, siendo mi área de interés desarrollador Full Stack.</p>
@@ -126,6 +126,13 @@
                         <div class="list border-list">
                             <label for="">Disponibilidad:</label>
                             <p>Trabajos presenciales en Ciudad de México, México. También, trabajos remotos en Español o Inglés</p>
+                        </div>
+                        <div class="list border-list">
+                            <label for="">Descarga mi CV:</label>
+                            <div class="cvBtn__container mx-4">
+                                <a class="btn btn-danger" href="./src/files/CV Andres Escala Spanish.pdf" download="CV Andres Escala Spanish.pdf">CV en Español</a>
+                                <a class="btn btn-primary" href="./src/files/CV Andres Escala English.pdf" download="CV Andres Escala English.pdf">CV en Inglés</a>
+                            </div>
                         </div>
                         <!-- <div class="list">
                             <label for="">País:</label>
@@ -195,6 +202,24 @@
                         </div>
                         <div class="skill-box">
                             <div class="skill-box__icon">
+                                <img class="icons" src="./src/icon/electron.png" alt="ElectronJS icon">
+                            </div>
+                            <div class="skill-box__text">
+                                <h6 class="skill-box__h6">Electron.Js</h6>
+                                <p class="skill-box__p">Framework JS para Escritorio</p>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-box__icon">
+                                <img class="icons" src="./src/icon/netcore.png" alt="NetCore icon">
+                            </div>
+                            <div class="skill-box__text">
+                                <h6 class="skill-box__h6">.Net Core</h6>
+                                <p class="skill-box__p">Framework C# para Web</p>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-box__icon">
                                 <img class="icons" src="./src/icon/piton.png" alt="Python icon">
                             </div>
                             <div class="skill-box__text">
@@ -208,6 +233,15 @@
                             </div>
                             <div class="skill-box__text">
                                 <h6 class="skill-box__h6">C</h6>
+                                <p class="skill-box__p">Lenguaje de Programación</p>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-box__icon">
+                                <img class="icons" src="./src/icon/c-sharp.png" alt="CSharp icon">
+                            </div>
+                            <div class="skill-box__text">
+                                <h6 class="skill-box__h6">C#</h6>
                                 <p class="skill-box__p">Lenguaje de Programación</p>
                             </div>
                         </div>
@@ -361,8 +395,9 @@
     </section>
     <footer>
         <div class="footer__container">
-            <p class="footer-p">Andres Escala 2022 © Todos los derechos reservados</p>
+            <p class="footer-p">Andres Escala <span id="currentYear"></span> &copy; Todos los derechos reservados</p>
         </div>
     </footer>
 </body>
+<script src="index.js"></script>
 </html>
